@@ -259,6 +259,7 @@ public class RNTrackPlayer: RCTEventEmitter {
     
     @objc(destroy)
     public func destroy() {
+        hasInitialized = false
         print("Destroying player")
     }
     
